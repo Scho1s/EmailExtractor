@@ -9,7 +9,7 @@
 """
 
 
-import regit 
+import re
 import pyodbc
 import os
 import pandas as pd
