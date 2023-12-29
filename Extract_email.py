@@ -2,7 +2,7 @@
     Title   - Email extractor
     Author  - Valerij Jurkin
     Date    - 27/12/2023
-    Updated - 28/12/2023
+    Updated - 29/12/2023
     This script extracts unique email addresses from notes within GP, Debtor's cards.
     Dataframe creates a table with variable amount of columns. For each email found
     in the note, the dataframe will create an additional column.
