@@ -45,8 +45,9 @@ def get_query(standard: bool = True) -> str:
 conndict = {'DRIVER': [x for x in pyodbc.drivers() if 'ODBC' in x][0],
             'UID': os.environ['GP_USERNAME'],
             'PWD': os.environ['GP_PASSWORD'],
-            'SERVER': '192.168.80.7',
-            'DATABASE': 'ROWC'}
+            'SERVER': os.environ['SQL_SERVER'],
+            'DATABASE': os.environ['DB'],
+            }
 
 conn = pyodbc.connect(**conndict)
 
